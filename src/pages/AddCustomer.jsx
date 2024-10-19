@@ -341,8 +341,10 @@ const AddCustomerForm = ({ categoryId, lang, CloseHides }) => {
             },
           }}
         >
-          <div style={{ padding: "16px" }}>
-            <Typography variant="h6">Add New Group</Typography>
+          <div style={{ padding: "16px",fontSize: '15px' }}>
+          <Typography variant="h6" sx={{ fontSize: '6px' }}>
+         Add New Group
+         </Typography>
             <TextField
               autoFocus
               margin="dense"

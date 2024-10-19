@@ -200,6 +200,8 @@ export const addStaffGroup = (payload) => async (dispatch) => {
   }
 };
 
+
+
 export const ALLCategoryAction = () => async (dispatch) => {
   try {
     dispatch({ type: ALL_CATEGORY_REQUEST });
@@ -222,6 +224,28 @@ export const ALLCategoryAction = () => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: ALL_CATEGORY_FAILURE,
+      payload: error.response?.data?.message || error.message,
+    });
+  }
+};
+export const allCustomersAction = () => async (dispatch) => {
+  try {
+    dispatch({ type: ALL_CUSTOMER_REQUEST });
+
+    const { data } = await axios.get("https://vr.w4u.in/manage/api/users/all", {
+      headers: {
+        "X-Api-Key": "8YUI3673DEB6F281A8F2E856902HJKU7",
+        "Content-Type": "multipart/form-data",
+      },
+    });
+
+    dispatch({
+      type: ALL_CUSTOMER_SUCCSESS,
+      payload: data.data.users,
+    });
+  } catch (error) {
+    dispatch({
+      type: ALL_CUSTOMER_FAILURE,
       payload: error.response?.data?.message || error.message,
     });
   }

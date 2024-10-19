@@ -73,7 +73,7 @@ const Bills = ({ lang }) => {
           <IconButton edge="start" aria-label="back">
             <ArrowBackIosNewIcon />
           </IconButton>
-          <Typography variant="h6" sx={{ flexGrow: 1, ml: 2 }}>
+          <Typography variant="h6" sx={{ flexGrow: 1, ml: 16,fontWeight:'bold' }}>
             {lang.bls || "Bills"}
           </Typography>
         </Box>
@@ -83,10 +83,10 @@ const Bills = ({ lang }) => {
             display: "flex",
             justifyContent: "space-around",
             alignItems: "center",
-            p: 2,
+            p: 0,
           }}
         >
-          <Typography variant="subtitle1">
+          <Typography variant="subtitle1" sx={{fontWeight:'bold'}}>
             Moinn
             <IconButton edge="end" color="inherit" aria-label="details">
               <ChevronRightIcon />

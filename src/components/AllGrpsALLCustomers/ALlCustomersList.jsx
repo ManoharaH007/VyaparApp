@@ -128,10 +128,10 @@ const ALlCustomersList = () => {
         }}
       >
         <IconButton onClick={() => setIsEditing(true)} size="small">
-          <EditIcon sx={{ color: "#00BFA6", mr: 2 }} />
+          <EditIcon sx={{ color: "#00BFA6", mr: 2,fontSize:'15px' }} />
         </IconButton>
 
-        <Typography variant="h6" sx={{ color: "#00BFA6", pb: "3px" }}>
+        <Typography variant="h6" sx={{ color: "#00BFA6",fontSize:'15px',mr:'2px' }}>
           Group Name
         </Typography>
       </Box>
@@ -160,18 +160,19 @@ const ALlCustomersList = () => {
           }}
           sx={{
             width: "90%",
-            borderRadius: "8px",
-            boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)",
+            boxShadow: "5px 5px 5px #c3c3c3",
+            border: "1px solid #999",
+            borderRadius:'5px',
           }}
         />
-        <Button onClick={searchFunction}>Search</Button>
+        <Button sx={{fontSize:'12px',color:'blue'}} onClick={searchFunction}>Search</Button>
       </Box>
 
       {/* Editable Group Name Section */}
       {isEditing && (
         <Box
           sx={{
-            backgroundColor: "lightgreen",
+             backgroundColor: "#00BFA6",
             p: 2,
             borderRadius: "8px",
             mb: 2,
@@ -179,7 +180,7 @@ const ALlCustomersList = () => {
         >
           <Typography
             variant="subtitle1"
-            sx={{ mb: 1, color: "white", fontWeight: "bold" }}
+            sx={{ mb: 1, color: "black", fontWeight: "bold" }}
           >
             Update Group Name
           </Typography>
@@ -192,6 +193,8 @@ const ALlCustomersList = () => {
             sx={{
               mb: 2,
               backgroundColor: "white",
+              boxShadow: "5px 5px 5px #c3c3c3",
+              border: "1px solid #999",
             }}
           />
           <Box sx={{ display: "flex", justifyContent: "space-between" }}>
@@ -202,6 +205,8 @@ const ALlCustomersList = () => {
                 backgroundColor: "white",
                 color: "black",
                 fontWeight: "bold",
+                boxShadow: "5px 5px 5px #c3c3c3",
+            border: "1px solid #999",
               }}
             >
               Cancel
@@ -213,6 +218,8 @@ const ALlCustomersList = () => {
                 backgroundColor: "white",
                 color: "black",
                 fontWeight: "bold",
+                boxShadow: "5px 5px 5px #c3c3c3",
+                border: "1px solid #999",
               }}
             >
               Save
@@ -233,7 +240,8 @@ const ALlCustomersList = () => {
                   alignItems: "center",
                   "&:hover": {
                     backgroundColor: "#f0f0f0",
-                    boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+                    boxShadow: "5px 5px 5px #c3c3c3",
+                    border: "1px solid #999",
                   },
                   mb: 1,
                   borderRadius: "8px",
@@ -283,8 +291,9 @@ const ALlCustomersList = () => {
           color: "#fff",
           mt: 2,
           borderRadius: "16px",
-          padding: "10px 20px",
-          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+          padding: "5px 15px",
+          boxShadow: "5px 5px 5px #c3c3c3",
+            border: "1px solid #999",
         }}
         onClick={AddCustomer}
       >
