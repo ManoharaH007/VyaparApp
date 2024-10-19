@@ -1,0 +1,508 @@
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: -100px;
+  }
+}
+
+#btn {
+  height: 7vh;
+  width: 25vh;
+  background-color: #d4edda;
+}
+
+/* Reset default margins and paddings */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: Graygreen; /* Apply Graygreen to the entire page */
+}
+
+/* sucsess animation */
+
+#box-Shadow {
+  box-shadow: 5px 5px 5px #c3c3c3;
+}
+
+.success-animation-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.success-animation-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.success-animation-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.success-animation-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 500ms, transform 500ms;
+}
+
+/* category.css */
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 400px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Add styles for selected category */
+.selected-category {
+  border: 2px solid #79a3e7; /* Golden border for selected category */
+  background-color: #f7f5e6; /* Light yellow background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/* css in  */
+.customer-form {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.back-button,
+.save-button {
+  background: none;
+  border: none;
+  width: 45px;
+  height: 50px;
+}
+
+.save-button {
+  background-color: #00bfa5;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  width: 70px;
+  height: 35px;
+  box-shadow: 5px 5px 5px #c3c3c3;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.inp {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #34c467; /* Green border */
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: 5px 5px 5px #c3c3c3;
+  /* Apply shadow with the same color as the border */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover or focus */
+}
+
+.inp:focus {
+  box-shadow: 0 0 8px #34c467; /* Stronger shadow on focus */
+  outline: none; /* Remove outline on focus */
+}
+
+.group-select {
+  position: relative;
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.balance-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.balance {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.balance.green {
+  background-color: #e8f5e9;
+  color: #333333;
+  border: 1px solid #34c467;
+  box-shadow: 5px 5px 5px #c3c3c3;
+
+  ::placeholder {
+    color: green;
+    opacity: 1; /* Firefox */
+  }
+}
+
+.balance.red {
+  background-color: #ffebee;
+  color: #333333;
+  border: 1px solid #de665c;
+  box-shadow: 5px 5px 5px #c3c3c3;
+  ::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+}
+
+.balance span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.balance small {
+  font-size: 12px;
+}
+
+.day-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.day-buttons button {
+  padding: 8px 12px;
+  border: 2px solid #00bfa5; /* Thicker border */
+  background-color: white;
+  color: #00bfa5;
+  border-radius: 30px; /* Rounder buttons */
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px #c3c3c3;
+}
+
+.day-buttons button.active {
+  background-color: #00bfa5;
+  color: white;
+}
+
+/* Product Details Container */
+.product-details {
+  margin: 10px 0;
+}
+
+.product-details-header {
+  background-color: #23bc7c;
+  border-radius: 12px;
+  color: white;
+  padding: 0px;
+  box-shadow: 5px 5px 5px #c3c3c3;
+}
+
+/* Content inside the product details */
+.product-details-content {
+  margin-left: 25px;
+}
+
+.product-details h2 {
+  padding-top: 22px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  margin-top: -3vh;
+  padding-bottom: 2vh;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#icon {
+  margin-left: 41px;
+}
+
+/* qr code design */
+#qr-code {
+  margin-top: -6vh;
+}
+
+/* client sidee */
+
+#search {
+  padding: 0px 51px;
+  margin-left: 8px;
+  border-radius: 10px;
+  width: 250px;
+  height: 30px;
+  margin-top: 14px;
+  box-shadow: 5px 5px 5px #c3c3c3;
+  border: 1px solid #999;
+}
+div#bell {
+  margin-top: 17px;
+  top: 92px;
+  width: 46px;
+}
+#search-container {
+  position: relative;
+  display: inline-block;
+}
+
+#search-icon {
+  position: absolute;
+  top: 65%;
+  left: 23px;
+  transform: translateY(-50%);
+  color: #040404;
+  font-size: 20px;
+}
+.notification-icon {
+  display: inline-block;
+  animation: bounce 1s infinite; /* Animation */
+}
+
+#crd {
+  margin-left: 9px;
+  width: 96%;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px); /* Adjust height of bounce */
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+
+  /* Supplier design */
+}
+.flex-item {
+  flex: 1;
+  text-align: center;
+  background-color: #d9d9d9;
+  border: 1px solid #c3c3c3;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5px;
+  margin: 0 8px; /* Equivalent to mx={1} */
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.flex-item:hover {
+  background-color: #00bfa6; /* Background color on hover */
+}
+#expenses_btn {
+  width: 65px;
+  font-size: 12px;
+  min-height: 25px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  box-shadow: 5px 5px 5px #c3c3c3;
+  margin-right: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: "#CACACA";
+  color: "white";
+}
+
+#expenses_btn:hover {
+  background-color: #a2d46a;
+}
+
+/* stepper */
+/* Half-circle container */
+.half-circle {
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  background-color: #e0e0e0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Inner circle that rotates */
+.half-circle-inner {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #2196f3; /* Default color */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom center; /* Rotate from the center bottom */
+  transition: transform 1s ease-in-out;
+}
+
+#flex_class {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/*bell icon animation  */
+/* Media Query for Mobile Devices */
+
+@media (max-width: 600px) {
+  .customer-form {
+    padding: 10px;
+  }
+
+  .balance-section {
+    justify-content: space-between;
+  }
+
+  .balance {
+    width: 14vh;
+    margin-bottom: 10px;
+  }
+
+  .balance.green {
+    width: 21vh;
+  }
+
+  #inp-field {
+    height: 45px;
+  }
+}
+
+@media (max-width: 600px) {
+  #qr-code {
+    padding-top: 26px;
+  }
+
+  .box-table {
+    margin-left: 0px;
+  }
+  .MuiGrid-item {
+    margin-bottom: 10px;
+  }
+
+  .MuiButton-outlined {
+    font-size: 0.8rem;
+  }
+
+  .MuiTextField-root {
+    font-size: 0.9rem;
+  }
+
+  .MuiAvatar-root {
+    width: 48px;
+    height: 48px;
+  }
+
+  .MuiTypography-h6 {
+    font-size: 1rem;
+  }
+
+  .product-details h2 {
+    font-size: 16px;
+    padding-top: 15px;
+  }
+
+  .product-details p {
+    margin-top: -36px;
+    font-size: 9px;
+  }
+
+  #icon {
+    margin-left: 40px;
+    margin-top: 8px;
+  }
+
+  /* Adjust padding and margin for smaller screens */
+  .product-details-header {
+    padding: 0px;
+  }
+
+  .product-details-content {
+    margin-left: 10px;
+  }
+
+  .inp {
+    width: 93%;
+  }
+
+  /* #box {
+    margin-left: -25px;
+  } */
+
+  #head {
+    width: 25vh;
+  }
+
+  #ledger {
+    margin-left: -25px;
+  }
+  #container {
+    width: 100%;
+    margin-left: -4px;
+  }
+  #tbl {
+    margin-left: -14px;
+  }
+
+  /* //client side Home page */
+  #search {
+    padding: 0px 51px;
+    margin-left: 8px;
+    border-radius: 10px;
+    width: 73%;
+    height: 30px;
+    margin-top: 14px;
+  }
+  div#bell {
+    margin-top: 17px;
+    top: 92px;
+    width: 46px;
+  }
+
+  #inp-customer {
+    margin-left: 2px;
+    width: 72%;
+  }
+}
