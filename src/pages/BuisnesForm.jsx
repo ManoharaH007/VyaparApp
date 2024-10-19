@@ -111,7 +111,7 @@ const BusinessForm = ({ categoryId, lang }) => {
 
   return (
     <Container sx={{ width: { xs: '100%', md: '50%' } }}>
-      <Typography variant="h6" align="center" marginBottom={3} marginTop={2}>
+      <Typography variant="h6" align="center" marginBottom={3} marginTop={3}>
         Business Details
       </Typography>
 
