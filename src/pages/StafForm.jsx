@@ -622,9 +622,9 @@ const StaffForm = ({ lang }) => {
                       name="manage_staff"
                       checked={formData.manage_staff}
                       onChange={handleChange}
-                      sx={{ marginRight: "45px"}}
+                      sx={{ marginRight: "5px"}}
                     />
-                    <Typography variant="body2" sx={{ marginRight: "10px" ,fontSize: isSmallScreen ? "10px" : "10px" }}>
+                    <Typography variant="body2" sx={{ marginRight: "10px" ,fontSize: isSmallScreen ? "10px" : "12px" }}>
                       {lang?.permission_stxt4 || "   (  Manage staff)"}
                     </Typography>
                     <br/>
@@ -676,17 +676,17 @@ const StaffForm = ({ lang }) => {
                         alignItems="center"
                         sx={{
                           marginBottom: "10px",
-                          justifyContent: "center",
+                          justifyContent: "left",
                           backgroundColor: "lightblue",
                         }}
                       >
-                        <Checkbox
+                        <Checkbox sx={{ml:'80px',width:'50px',position:'relative'}}
                           name={group.group_name}
                           onChange={(e) =>
                             handleCheckboxChange(e, group.group_name, group.id)
                           }
                         />
-                        <Typography variant="body2" sx={{ marginLeft: "8px" }}>
+                        <Typography variant="body2" sx={{ marginLeft: "10px" ,fontSize:'18px'}}>
                           {group.group_name}
                         </Typography>
                       </Box>
